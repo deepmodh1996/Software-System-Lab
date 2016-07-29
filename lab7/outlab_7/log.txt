@@ -1,0 +1,34 @@
+while Auto-merging observeConflict.txt following conflict arises.
+CONFLICT (add/add): Merge conflict in observeConflict.txt
+Automatic merge failed
+
+
+
+
+
+
+~/remoterepo/second$ git log
+commit fead48637ba8f8861488ba92c7d320fea6aff2e0
+Author: deepmodh <d811eep@gmail.com>
+Date:   Mon Sep 21 18:07:31 2015 +0530
+
+    part g commited
+
+
+
+
+~/remoterepo/first$ git log
+commit f2ec9c9eed42aeb7c4085b66ad4a795d87bc98e6
+Author: deepmodh <d811eep@gmail.com>
+Date:   Mon Sep 21 18:08:41 2015 +0530
+
+    part h commited
+
+commit bdf177de6c573882daf452b1479d2e4ba2002296
+Author: deepmodh <d811eep@gmail.com>
+Date:   Mon Sep 21 18:04:19 2015 +0530
+
+    part d commiter
+
+
+

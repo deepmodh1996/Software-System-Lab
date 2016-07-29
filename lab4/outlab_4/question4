@@ -1,0 +1,42 @@
+#! /bin/bash/
+
+
+if [  $# -eq 0 ] ; then	#Checking for empty arguments	
+	exit 1;
+fi
+
+str=$(echo $HOME);
+str1='/myopen.cfg';
+str2=$str$str1;
+
+if [ ! -f $str2 ] ; then	
+#Checking existence of configuration file
+	exit 2;
+fi
+
+
+ext=$(echo $1 | cut -d '.' -f2);
+
+
+
+for line in $(cat $str2)
+do  
+
+  s1=$(echo "$line" | cut -d ':' -f1);
+    
+  if [ "$ext" = "$s1" ]
+  then 
+    s2=$(echo "$line" | cut -d ':' -f2);
+    $s2 $1;
+    if [ $? -eq 0 ]
+    then
+      exit 0;
+    fi
+     
+    exit 4;
+
+  fi
+  
+done
+
+exit 3;

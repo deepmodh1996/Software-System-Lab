@@ -1,0 +1,3 @@
+size of each executable is exactly same.
+
+as there is nothing dynamically allocated;size of each file is same.

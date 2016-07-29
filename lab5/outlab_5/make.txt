@@ -1,0 +1,19 @@
+(c)make command checks for small'm' before capital 'M' but capital preferred as it can be pointed out easily.
+
+(d)Use of mkdir and using '-p' flag we don't need to check if file exists.
+
+(e)Use of '-d' to check if a file exists , cd only works for a line so to use '\' to run i one line. 
+
+(f)To call targets from other targets.
+
+(g)To compile cpp files, dependencies, patterns.
+
+(h)To link libraries to object files for making executable.
+
+(i)To add flag in g++ to get optimized version.
+
+(j)To delete Directories.
+
+(k)To delete objects from different directories.
+
+(l)To use tar command to make compressed archive of required files. 

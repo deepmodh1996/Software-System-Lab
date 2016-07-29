@@ -1,0 +1,16 @@
+public class Writer extends Thread{
+   static Book b;
+   int id;
+   Writer(Book b1){
+    b=b1;
+    id=-1;
+   }
+   public void setid(int i){
+   	id=i;
+   }
+   public void run(){
+    //Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
+      b.write(this);
+   }
+
+}

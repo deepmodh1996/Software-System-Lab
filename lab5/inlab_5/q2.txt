@@ -1,0 +1,5 @@
+PATH variable contains dirctories of executables in order of preference.
+We added the path of directory in which executable existed to be
+able to run it without specifying its whole path every time we run it.
+Command used:
+PATH=$PATH:/users/ug14/deepmodh/Desktop/inlab_05_final_group33

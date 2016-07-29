@@ -1,0 +1,104 @@
+ls -p | grep -v / >>ftemp.txt
+for name1 in $(cat ftemp.txt)
+do
+	if [ "$name1" = "q6.sh" ]
+		then continue
+	fi
+
+	mon=$(stat $name1 | grep Modify | cut -d '-' -f2)
+ 	day=$(stat $name1 | grep Modify | cut -d '-' -f3 | cut -d ' ' -f1)
+ 	hr=$(stat $name1 | grep Modify | cut -d ' ' -f3 | cut -d ':' -f1)
+ 	min=$(stat $name1 | grep Modify | cut -d ' ' -f3 | cut -d ':' -f2)
+
+ 	 if [[ ${mon:0:1} == "0" ]] ; 
+ 	 	then mon=${mon:1:2}
+ 	 fi
+ 	 if [[ ${day:0:1} == "0" ]] ;
+ 	 	then day=${day:1:2}
+ 	 fi
+ 	 if [[ ${hr:0:1} == "0" ]] ; 
+ 		 then hr=${hr:1:2};
+ 	fi
+ 	 if [[ ${min:0:1} == "0" ]] ;
+ 	 	 then min=${min:1:2}
+ 	 fi
+
+	hr=$(($hr + 1))
+
+	if [ $min -ge 59 ]
+	then
+		min=0	
+		hr=$(($hr + 1))
+	fi
+	if [ "$hr" -eq "25" ] 
+	then
+		hr=1
+		day=$(($day + 1))
+	fi
+	if [ $mon -eq 1 ] || [ $mon -eq 3 ] || [ $mon -eq 5 ] || [ $mon -eq 7 ] || [ $mon -eq 8 ] || [ $mon -eq 10 ] || [ $mon -eq 12 ] ;
+	then
+		if [ $day -eq 32 ] 
+		then
+			day=1
+			mon=$(($mon + 1))
+		fi
+	else
+		if [ $mon -eq 2 ]
+		then
+			if [ $day -eq 29 ]
+			then 
+				day=1
+				mon=$(($mon + 1))
+			fi
+		else
+			if [ $day -eq 31 ]
+			then 
+				day=1
+				mon=$(($mon + 1))
+			fi
+		fi
+	fi
+	if [ $mon -eq 13 ]
+	then
+		mon=1
+		day=1
+		hr=1
+		min=0
+	fi
+
+	if [ $mon -lt 10 ]
+	then
+		mon1=0
+		mon1+=$mon
+	else
+		mon1=$mon
+	fi
+	if [ $day -lt 10 ]
+	then
+		day1=0
+		day1+=$day
+	else
+		day1=$day
+	fi
+	if [ $hr -lt 10 ]
+	then
+		hr1=0
+		hr1+=$hr
+	else
+		hr1=$hr
+	fi
+	if [ $min -lt 10 ]
+	then
+		min1=0
+		min1+=$min
+	else
+		min1=$min
+	fi
+
+	newname=${filename}_${mon1}_${day1}_${hr1}:${min1}
+
+	mv $name1 $name1$newname
+
+done
+rm ftemp*
+exit

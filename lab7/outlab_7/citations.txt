@@ -1,0 +1,11 @@
+http://www.pythonforbeginners.com/systems-programming/using-the-csv-module-in-python/
+
+http://www.thegeekstuff.com/2014/07/python-regex-examples/
+
+http://www.tutorialspoint.com/python/python_reg_expressions.htm
+
+http://www.thegeekstuff.com/2014/05/python-filter-and-list/
+
+http://www.thegeekstuff.com/2013/05/python-dictionary/
+
+

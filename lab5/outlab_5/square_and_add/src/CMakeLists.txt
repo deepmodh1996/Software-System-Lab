@@ -1,0 +1,7 @@
+include_directories ("${PROJECT_SOURCE_DIR}/libsrc/include")
+add_executable(sqnadd_no_lib main)
+target_link_libraries(sqnadd_no_lib parti_library)
+add_executable(sqnadd_stat_lib main)
+target_link_libraries(sqnadd_stat_lib static_library)
+add_executable(sqnadd_dyn_lib main)
+target_link_libraries(sqnadd_dyn_lib static_library)

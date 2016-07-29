@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////
+//////   ERROR 1
+////////////////////////////////////////////////////////
+
+
+Breakpoint 1 at 0x4006a5: file err.c, line 35.
+The program is not being run.
+The program is not being run.
+Starting program: /opt/labuser/9inlab/a.out 
+
+Breakpoint 1, main () at err.c:35
+35	  struct ListNode *head = NULL;
+36	  struct ListNode *curr = NULL;
+37	  for (i = 0; i < 7; i++) {
+38	    struct ListNode *t =       (struct ListNode *) malloc(sizeof(struct ListNode));
+39	    t->val = i + 1;
+40	    t->next = NULL;
+41	    if (head == NULL) {
+42	      curr = t;
+37	  for (i = 0; i < 7; i++) {
+38	    struct ListNode *t =       (struct ListNode *) malloc(sizeof(struct ListNode));
+39	    t->val = i + 1;
+40	    t->next = NULL;
+41	    if (head == NULL) {
+42	      curr = t;
+
+////////////////////////////////////////////////////////
+//////   ERROR 2
+////////////////////////////////////////////////////////
+
+Breakpoint 1 at 0x40071f: file err.c, line 51.
+Starting program: /opt/labuser/9inlab/a.out 
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000400611 in reverse (temp=0x6020b0, back_head=0x0, 
+    head=0x7fffffffdc58) at err.c:16
+16	    (back_head)->next = temp;
+$1 = (struct ListNode *) 0x0

@@ -1,0 +1,48 @@
+body{
+	font-family:serif;
+}
+
+
+nav{
+	color: #8A4117;
+	font-size: 2em;
+	width: 100%;
+}
+
+nav table tr th{
+	margin-left: 20px;
+	width: 5%;
+	text-align: center;
+	background-color: #AF7817;
+	border-radius:20px 0 20px 0;
+}
+
+nav table tr th a{
+	text-decoration: none;
+}
+
+nav table tr th a:link{
+	color: #ECE586;
+}
+
+nav table tr th a:visited{
+	color: #ECE586;
+}
+
+nav table tr th:hover{
+	background-color: #800000;
+}
+
+nav table tr th a:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#hobbies{
+	font-size: 130%;
+	color: #000000;
+}
+
+#intro{
+	font-size: 130%;
+}

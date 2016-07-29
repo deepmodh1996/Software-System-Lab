@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Lab02Group33</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+<style>
+body{
+        background-color:white;     
+  }
+
+#list
+{text-align:left;
+text-transform:capitalize;
+color:#000000;
+
+}
+
+#href 
+		 {
+		 	font-size:2.0em;
+
+			margin-left: 25%;
+			color: #A00000;
+			text-decoration:none;
+		}
+</style>
+</head>
+<body>
+	<h1 style="color:#800000;text-align:center">
+		STUDENT ACTIVITY CENTRE 
+	</h1>	
+	<nav>
+		<table>
+			<tr>
+				<th><a href="index.html"> Home</a></th>
+				<th><a href="aboutMe.html"> About Me </a></th>
+				<th><a href="group.html"> Group </a></th>
+				<th><a href="mycanvas.html"> Canvas </a></th>
+				<th><a href="killerSudoku.html" target="_blank"> Killer Sudoku </a></th>
+				<th><a href="contectMe.html"> Contact Me</a></th>
+			</tr>
+		</table>
+	</nav>
+<div >
+<br>
+<a id="href" href="#instructions">Click to see INSTRUCTIONS </a>
+<br>
+
+<img src="sac.png" alt="SAC IMAGE" style="width:700px;height:900px;"
+usemap="#sac">
+<div id="oat" style="visibility:hidden">
+<img src="oat.png" style="width:510px;height:360px;position:fixed;top:150px;right:20px">
+</div>
+<div id="volley" style="visibility:hidden">
+<img src="volleyball.png" style="width:510px;height:380px;position:fixed;top:150px;right:20px">
+</div>
+<div id="tt" style="visibility:hidden">
+<p>The TT Room has 4 tables and is air conditioned</p>
+<img src="ttroom.png" style="width:510px;height:450px;position:fixed;top:150px;right:20px">
+</div>
+
+</div>
+
+
+<map name="sac">
+<area shape="rect" coords="17,63,95,118" alt="Toilet" title="Toilet">
+<area shape="rect" coords="17,118,60,153" alt="Techfest" title="Techfest" href="http://www.techfest.org/">
+<area shape="rect" coords="17,153,60,186" alt="mi room" title="M.I room"
+href="https://moodi.org/">
+<area shape="rect" coords="17,226,60,260" alt="recording room" title="Recording Room">
+<area shape="rect" coords="17,260,60,290" alt="recording room" title="Film Room">
+<area shape="rect" coords="17,290,60,320" alt="recording room" title="E-Cell Room"  href="http://www.ecell.in/2015/">
+
+<area shape="rect" coords="17,320,220,550" alt="recording room" title="old swimming pool">
+<area shape="rect" coords="100,120,270,300" alt="recording room" title="volleyball court" onmouseover="showvolley()" onmouseout="hidevolley()">
+<area shape="rect" coords="330,100,600,280" alt="recording room" title="OPEN AIR THEATRE" href="https://fourthwalliitb.wordpress.com/" onmouseover="showoat()" onmouseout="hideoat()">
+<area shape="rect" coords="580,65,630,160" alt="recording room" title="Table Tennis Room" onmouseover="showtable()" onmouseout="hidetable()">
+</map>
+
+
+
+<div id="instructions" style="color:#800000;font-size:2.0em;">
+	<p>
+		INSTRUCTIONS:
+	</p>
+</div>
+
+<div style="float:left; width:50%;color:#00A000;font-size:1.5em">
+<ul>
+<li>Above, is approximately to the scale image of SAC</li>
+<li>By hovering over rooms you can know which room is it. eg, room no.20,21,26,14,etc</li>
+<li>By clicking over rooms you will be directed to their web pages. eg, 20,21,16,etc </li>
+<li>By hovering over some rooms you can get their view on top right corner of page. eg, 11,15,14.</li>
+<li>To the left is the relation from room number to room names</li>
+</ul>
+</div>
+<div   style="float:left; width:20%;color:#0000C0;font-size:1.0em">
+<ol id="list">
+<li>Key Room</li>
+<li>Pantry Room</li>
+<li>Sac Office</li>
+<li>sports officer room</li>
+<li>Toilet</li>
+<li>yoga room</li>
+<li>weightlifting room</li>
+<li>gym</li>
+<li>dance room</li>
+<li>stab room</li>
+<li>table tennis room</li>
+<li>music room</li>
+<li>sac store house</li>
+<li>volleyball court</li>
+<li>oat stage</li>
+<li>oat stairs</li>
+<li>nss room</li>
+<li>squash room</li>
+<li>theatre room</li>
+<li>techfest room</li>
+<li>mi room</li>
+<li>store room</li>
+<li>recording room</li>
+<li>film room</li>
+<li>e-cell room</li>
+<li>old swimming pool</li>
+<li>corridor</li>
+</ol>
+</div>
+</body>
+</html>

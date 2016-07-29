@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab02Group33</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+	<style>
+		body{
+			background-color: #FFCC66;
+			background-size: 100%;
+		}
+		#citation{
+			position: absolute;
+			bottom: 0;
+			color: #800000;
+			text-align: left;
+			font-size: 1.5em;
+			margin-left: 5%;		}
+		#citation a:link{
+			color: #800000;
+		}
+		#citation a:visited{
+			color:#800000;
+		}
+		#contactdetail{
+			color: #0000FF;
+			background-color: transparent;
+			margin-top: 5%;
+			border-radius: 20px 20px 20px 20px;
+			margin-left: 25%;
+			font-size: 1.5em;
+			text-align: center;
+			width: 50%;
+		}
+		#detail{
+			color:#800000;
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 5%;
+		}
+		#content{
+			color:#800000;
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 4%;
+		}
+		#content #cse:link{
+			color:#800000;
+		}
+		#content #cse:visited{
+			color: #800000;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color:#800000;text-align:center">
+		Contact Me
+	</h1>	
+	<nav>
+		<table>
+			<tr>
+				<th><a href="index.html"> Home</a></th>
+				<th><a href="aboutMe.html"> About Me </a></th>
+				<th><a href="group.html"> Group </a></th>
+				<th><a href="mycanvas.html"> Canvas </a></th>
+				<th><a href="killerSudoku.html" target="_blank"> Killer Sudoku </a></th>
+				<th><a href="contectMe.html"> Contact Me</a></th>
+			</tr>
+		</table>
+	</nav>
+	<div id="content">
+		Deep Modh
+		<br>140050002
+		<br>Sophomore in Btech <a href="http://www.cse.iitb.ac.in/" id="cse"> CSE,IIT Bombay.</a>
+	</div>
+	<button id="contactdetail" onmouseover="showDetail()" onmouseout="hideDetail()"> Hover here to see the contact details.</button>
+	<div id="detail" style="visibility:hidden">
+		<span id="heading">Mobile Number :</span> +91 9967196390
+		<br>
+		<span id="heading">Email id :</span> DeepModh@cse.iitb.ac.in
+		<br>
+	</div>
+	
+</body>
+</html>
