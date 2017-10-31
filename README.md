@@ -1,6 +1,6 @@
 # Software-System-Lab
 
-During Autumn 2015, as part of CS 251 course; every week, we are given assignments in two parts. One is called "Outlab" and other is called "Inlab". We are given time of 3 days to finish "Outlab" and 2.30 hours to complete "Inlab". **In just 3 days, learn the technology that you have never used before and code it up in working, presentable form.** Assignment submission is done in a group of three students. Each assignment focuses on specific programming skill.
+During Autumn 2015, as part of CS 251 course; every week, we are given assignments in two parts. One is called "Outlab" and other is called "Inlab". We are given time of 3 days to finish "Outlab" and 2.30 hours to complete "Inlab". **In just 3 days, learn the technology you have never used before and code it up in working, presentable form.** Assignment submission is done in a group of three students. Each assignment focuses on specific programming skill.
 
 |Lab Number|Content|
 |:----:|----|
